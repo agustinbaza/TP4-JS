@@ -3,21 +3,22 @@
 const cuenta = {
   titular: "Alex",
   saldo: 0,
-  ingresar(dinero){
+  ingresar(dinero) {
     this.saldo += dinero;
   },
-  extraer(extraccion){
+  extraer(extraccion) {
     if (extraccion > this.saldo) {
       document.write("No hay saldo disponible para extracción");
     } else {
       this.saldo -= extraccion;
     }
   },
-  informar(){
-    document.write(`Hola ${cuenta.titular} su cuenta tiene $${cuenta.saldo} <br>`);
-  }
+  informar() {
+    document.write(
+      `Hola ${cuenta.titular} su cuenta tiene $${cuenta.saldo} <br>`
+    );
+  },
 };
-
 
 console.log(cuenta.informar());
 console.log(cuenta.ingresar(30));
