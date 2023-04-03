@@ -48,3 +48,4 @@ class Aeropuerto {
   const buscarVuelo = nuevoAeropuerto.buscarAvion("Boeing-777");
   console.log(buscarVuelo);
   
+  
